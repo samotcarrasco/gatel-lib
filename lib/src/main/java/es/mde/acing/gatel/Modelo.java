@@ -2,6 +2,8 @@ package es.mde.acing.gatel;
 
 import java.util.List;
 
+import es.mde.acing.gatel.ModeloImpl.TipoModelo;
+
 
 public interface Modelo {
 
@@ -13,8 +15,10 @@ public interface Modelo {
 	
 	String getDetalles();
 		
-	List<Equipo> getEquipos();
-	
 	String getImagen();
+	
+	TipoModelo getTipoModelo();
+
+	List<Equipo> getEquipos();
 
 }

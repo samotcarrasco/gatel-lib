@@ -1,6 +1,9 @@
 package es.mde.acing.gatel;
 
 import java.time.LocalDate;
+import java.util.List;
+
+import es.mde.acing.gatel.EquipoImpl.TipoEquipo;
 
 public interface Equipo {
 
@@ -12,6 +15,8 @@ public interface Equipo {
 
 	Modelo getModelo();
 	
-//	List<Incidencial> getIncidencias();
+	List<Incidencia> getIncidencias();
+	
+	TipoEquipo getTipoEquipo();
 	
 }
