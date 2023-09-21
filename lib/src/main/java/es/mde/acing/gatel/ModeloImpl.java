@@ -8,7 +8,7 @@ public class ModeloImpl implements Modelo {
     private String nombreModelo;
     private String detalles;
     private String imagen;
-    private List<Equipo> equipos;
+    //private List<Equipo> equipos;
 
     public static enum TipoModelo {
 		EquipoInformatico,
@@ -61,14 +61,14 @@ public class ModeloImpl implements Modelo {
 		this.imagen = imagen;
 	}
 	
-    @Override
-    public List<Equipo> getEquipos() {
-        return equipos;
-    }
-    
-    public void setEquipos(List<Equipo> equipos) {
-		this.equipos = equipos;
-	}
+ //   @Override
+//    public List<Equipo> getEquipos() {
+//        return equipos;
+//    }
+//    
+//    public void setEquipos(List<Equipo> equipos) {
+//		this.equipos = equipos;
+//	}
 
 	@Override
 	public TipoModelo getTipoModelo() {
@@ -79,7 +79,7 @@ public class ModeloImpl implements Modelo {
 	@Override
 	public String toString() {
 		return "ModeloImpl [marca=" + marca + ", categoria=" + categoria + ", nombreModelo=" + nombreModelo
-				+ ", detalles=" + detalles + ", imagen=" + imagen + ", equipos=" + equipos + "]";
+				+ ", detalles=" + detalles + ", imagen=" + imagen ;//+ ", equipos=" + equipos + "]";
 	}
 
 	

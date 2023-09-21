@@ -2,10 +2,10 @@ package es.mde.acing.gatel;
 
 public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformatico {
   
-	Integer pulgadas;
-	Integer discoDuro;
-	Integer memoria;
-	String sistemaOperativo;
+	private Integer pulgadas;
+	private Integer discoDuro;
+	private Integer memoria;
+	private String sistemaOperativo;
 	
 	@Override
 	public Integer getPulgadas() {
