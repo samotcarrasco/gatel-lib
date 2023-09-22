@@ -6,7 +6,7 @@ public class TipoEquipoInformatico {
 	
 	private int id;
 	private String nombre;
-	private List<Equipo> equipos;
+	private List<EquipoInformatico> equipos;
 
 	
 	public int getId() {
@@ -22,10 +22,10 @@ public class TipoEquipoInformatico {
 		this.nombre = nombre;
 	}
 	
-	public List<Equipo> getEquipos() {
+	public List<EquipoInformatico> getEquipos() {
 		return equipos;
 	}
-	public void setEquipos(List<Equipo> equipos) {
+	public void setEquipos(List<EquipoInformatico> equipos) {
 		this.equipos = equipos;
 	}
 	@Override
@@ -33,6 +33,4 @@ public class TipoEquipoInformatico {
 		return "TipoEquipoInformatico [id=" + id + ", nombre=" + nombre + "]";
 	}
 	
-	
-
 }

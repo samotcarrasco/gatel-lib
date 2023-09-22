@@ -45,13 +45,18 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 	}
 	
 	@Override
-	public TipoModelo getTipoModelo() {
-	    return TipoModelo.EquipoInformatico;
-	}
-	
-	@Override
 	public TipoEquipoInformatico getTipo() {
 		return tipo;
+	}
+	
+	public void setTipo(TipoEquipoInformatico tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+	@Override
+	public TipoModelo getTipoModelo() {
+	    return TipoModelo.EquipoInformatico;
 	}
 
 	@Override
