@@ -9,4 +9,6 @@ public interface EquipoInformatico {
 	Integer getMemoria();
 
 	String getSistemaOperativo();
+	
+	TipoEquipoInformatico getTipo();
 }

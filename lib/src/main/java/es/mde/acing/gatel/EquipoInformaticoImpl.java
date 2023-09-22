@@ -6,6 +6,7 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 	private Integer discoDuro;
 	private Integer memoria;
 	private String sistemaOperativo;
+	private TipoEquipoInformatico tipo;
 	
 	@Override
 	public Integer getPulgadas() {
@@ -46,6 +47,11 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 	@Override
 	public TipoModelo getTipoModelo() {
 	    return TipoModelo.EquipoInformatico;
+	}
+	
+	@Override
+	public TipoEquipoInformatico getTipo() {
+		return tipo;
 	}
 
 	@Override
