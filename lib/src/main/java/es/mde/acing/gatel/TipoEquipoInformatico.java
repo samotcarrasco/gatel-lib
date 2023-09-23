@@ -4,15 +4,15 @@ import java.util.List;
 
 public class TipoEquipoInformatico {
 	
-	private int id;
+	private Long id;
 	private String nombre;
 	private List<EquipoInformatico> equipos;
 
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNombre() {
