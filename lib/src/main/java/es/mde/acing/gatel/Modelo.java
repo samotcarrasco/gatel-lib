@@ -18,6 +18,8 @@ public interface Modelo {
 	String getImagen();
 	
 	TipoModelo getTipoModelo();
+	
+	TipoEquipoInformatico getTipoEquipoInf();
 
 //	List<Equipo> getEquipos();
 

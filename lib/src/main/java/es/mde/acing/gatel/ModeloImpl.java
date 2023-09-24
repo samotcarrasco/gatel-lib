@@ -8,6 +8,8 @@ public class ModeloImpl implements Modelo {
     private String nombreModelo;
     private String detalles;
     private String imagen;
+    private TipoEquipoInformatico tipoEquipoInf;
+    
     //private List<Equipo> equipos;
 
     public static enum TipoModelo {
@@ -61,6 +63,12 @@ public class ModeloImpl implements Modelo {
 		this.imagen = imagen;
 	}
 	
+	@Override
+	public TipoEquipoInformatico getTipoEquipoInf() {
+		//en las clases Auriculares y WebCam devolverá null
+	 return tipoEquipoInf;
+	}
+	
  //   @Override
 //    public List<Equipo> getEquipos() {
 //        return equipos;
@@ -81,6 +89,8 @@ public class ModeloImpl implements Modelo {
 		return "ModeloImpl [marca=" + marca + ", categoria=" + categoria + ", nombreModelo=" + nombreModelo
 				+ ", detalles=" + detalles + ", imagen=" + imagen ;//+ ", equipos=" + equipos + "]";
 	}
+
+
 
 	
 }
