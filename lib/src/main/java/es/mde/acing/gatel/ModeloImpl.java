@@ -65,8 +65,12 @@ public class ModeloImpl implements Modelo {
 	
 	@Override
 	public TipoEquipoInformatico getTipoEquipoInf() {
-		//en las clases Auriculares y WebCam devolverá null
-	 return tipoEquipoInf;
+		//en las clases Auriculares y WebCam se sobreescribira para que devuelva null
+		return tipoEquipoInf;
+	}
+	
+	public void setTipoEquipoInf(TipoEquipoInformatico tipoEquipoInf) {
+		this.tipoEquipoInf = tipoEquipoInf;
 	}
 	
  //   @Override
