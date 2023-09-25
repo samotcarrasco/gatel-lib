@@ -80,7 +80,7 @@ public class ModeloImpl implements Modelo {
 	@Override
 	public String toString() {
 		return "ModeloImpl [marca=" + marca + ", categoria=" + categoria + ", nombreModelo=" + nombreModelo
-				+ ", detalles=" + detalles + ", imagen=" + imagen ;//+ ", equipos=" + equipos + "]";
+				+ ", detalles=" + detalles ;//+ ", equipos=" + equipos + "]";
 	}
 
 
