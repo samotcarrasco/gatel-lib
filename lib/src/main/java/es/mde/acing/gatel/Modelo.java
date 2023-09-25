@@ -19,8 +19,6 @@ public interface Modelo {
 	
 	TipoModelo getTipoModelo();
 	
-	TipoEquipoInformatico getTipoEquipoInf();
-
 //	List<Equipo> getEquipos();
 
 }

@@ -27,11 +27,6 @@ public class AuricularesImpl extends ModeloImpl implements Auriculares {
     public TipoModelo getTipoModelo() {
         return TipoModelo.Auriculares;
     }
-    
-    @Override
-	public TipoEquipoInformatico getTipoEquipoInf() {
-	 return null;
-	}
 
 	@Override
 	public String toString() {

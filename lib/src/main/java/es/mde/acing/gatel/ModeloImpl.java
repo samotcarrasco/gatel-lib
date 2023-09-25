@@ -8,7 +8,6 @@ public class ModeloImpl implements Modelo {
     private String nombreModelo;
     private String detalles;
     private String imagen;
-    private TipoEquipoInformatico tipoEquipoInf;
     
     //private List<Equipo> equipos;
 
@@ -61,16 +60,6 @@ public class ModeloImpl implements Modelo {
 
 	public void setImagen(String imagen) {
 		this.imagen = imagen;
-	}
-	
-	@Override
-	public TipoEquipoInformatico getTipoEquipoInf() {
-		//en las clases Auriculares y WebCam se sobreescribira para que devuelva null
-		return tipoEquipoInf;
-	}
-	
-	public void setTipoEquipoInf(TipoEquipoInformatico tipoEquipoInf) {
-		this.tipoEquipoInf = tipoEquipoInf;
 	}
 	
  //   @Override

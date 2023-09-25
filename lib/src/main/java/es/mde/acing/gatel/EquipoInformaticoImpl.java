@@ -6,7 +6,7 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 	private Integer discoDuro;
 	private Integer memoria;
 	private String sistemaOperativo;
-	//private TipoEquipoInformatico tipo;
+	private String tipoEquipoInf;
 	
 	@Override
 	public Integer getPulgadas() {
@@ -44,14 +44,14 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 		this.sistemaOperativo = sistemaOperativo;
 	}
 	
-//	@Override
-//	public TipoEquipoInformatico getTipo() {
-//		return tipo;
-//	}
-//	
-//	public void setTipo(TipoEquipoInformatico tipo) {
-//		this.tipo = tipo;
-//	}
+	@Override
+	public String getTipoEquipoInformatico() {
+		return tipoEquipoInf;
+	}
+	
+	public void setTipoEquipoInformatico(String tipoEquipoInf) {
+		this.tipoEquipoInf = tipoEquipoInf;
+	}
 	
 	
 	@Override

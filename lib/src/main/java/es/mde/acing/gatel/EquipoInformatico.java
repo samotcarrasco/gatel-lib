@@ -10,5 +10,6 @@ public interface EquipoInformatico {
 
 	String getSistemaOperativo();
 	
-//	TipoEquipoInformatico getTipo();
+	String getTipoEquipoInformatico();
+	
 }

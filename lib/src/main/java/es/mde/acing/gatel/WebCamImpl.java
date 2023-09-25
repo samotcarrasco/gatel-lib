@@ -19,11 +19,6 @@ public class WebCamImpl extends ModeloImpl implements WebCam {
 	    }
 
 	@Override
-	public TipoEquipoInformatico getTipoEquipoInf() {
-		 return null;
-	}
-	  
-	@Override
 	public String toString() {
 		return "WebCamImpl [resolucion=" + resolucion + " Modelo " + super.toString() + "]";
 	}
