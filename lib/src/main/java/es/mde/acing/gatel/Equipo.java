@@ -15,6 +15,10 @@ public interface Equipo {
 
 	Modelo getModelo();
 	
+//	List<Unidad> getUnidades();
+//
+//	List<MiembroGC> getMiembrosGC();
+	
 	//List<Incidencia> getIncidencias();
 	
 	TipoEquipo getTipoEquipo();

@@ -2,7 +2,7 @@ package es.mde.acing.gatel;
 
 public class ConfiguracionImpl extends IncidenciaImpl implements Configuracion{
 
-	String aplicacion;
+	private String aplicacion;
 
 	@Override
 	public String getAplicacion() {

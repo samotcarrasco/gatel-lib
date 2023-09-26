@@ -2,8 +2,8 @@ package es.mde.acing.gatel;
 
 public class AveriaImpl extends IncidenciaImpl implements Averia{
 
-	String componente;
-	Boolean reparable;
+	private String componente;
+	private Boolean reparable;
 
 	@Override
 	public String getComponente() {

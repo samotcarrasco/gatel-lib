@@ -2,7 +2,7 @@ package es.mde.acing.gatel;
 
 public class SolicitudImpl extends IncidenciaImpl implements Solicitud{
 
-	String aceptacion;
+	private String aceptacion;
 
 	@Override
 	public String isAceptado() {

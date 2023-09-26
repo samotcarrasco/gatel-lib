@@ -5,14 +5,14 @@ import java.util.List;
 
 public class PersonaImpl implements Persona{
 
-    String nombre;
-    String apellidos;
-    String telefono;
-    String email;
-    Perfil perfil;
-    String nombreUsuario;
-    String password;
-    List<Incidencia> incidencias;
+	private String nombre;
+	private String apellidos;
+	private String telefono;
+	private String email;
+	private Perfil perfil;
+	private String nombreUsuario;
+	private String password;
+	private List<Incidencia> incidencias;
     
 	public static enum Perfil {
 		Estandar,

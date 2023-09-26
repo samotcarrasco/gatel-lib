@@ -3,7 +3,7 @@ package es.mde.acing.gatel;
 
 public class EquipoDeUnidadImpl extends EquipoImpl implements EquipoDeUnidad  {
 
-    Unidad unidad;
+	private Unidad unidad;
 
     @Override
 	public Unidad getUnidad() {

@@ -2,10 +2,10 @@ package es.mde.acing.gatel;
 
 public class ExtravioImpl extends IncidenciaImpl implements Extravio{
 
-	String ultimaUbicacion;
-	Boolean encontrado;
-	Boolean bloqueado;
-	Boolean borrado;
+	private String ultimaUbicacion;
+	private Boolean encontrado;
+	private Boolean bloqueado;
+	private Boolean borrado;
 		
 	@Override
 	public String getUltimaUbicacion() {

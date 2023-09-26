@@ -4,12 +4,12 @@ import java.util.List;
 
 public class UnidadImpl implements Unidad{
 
-    String nombre;
-    String codigoUnidad;
-    String correoOficial;
-    String telefono;
-    List<EquipoDeUnidad> listaEquiposUnidad;
-    List<MiembroGC> listaMiembrosGC;
+	private String nombre;
+	private String codigoUnidad;
+	private String correoOficial;
+	private String telefono;
+	private List<EquipoDeUnidad> listaEquiposUnidad;
+	private List<MiembroGC> listaMiembrosGC;
 	
     @Override
     public String getNombre() {

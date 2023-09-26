@@ -6,8 +6,8 @@ import es.mde.acing.gatel.PersonaImpl.TipoPersona;
 
 public class PersonalExternoImpl extends PersonaImpl implements PersonalExterno {
 
-    String dni;
-    String empresa;
+	private String dni;
+	private String empresa;
     	
     @Override
     public String getDni() {

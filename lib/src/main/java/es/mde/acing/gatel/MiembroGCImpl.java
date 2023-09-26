@@ -4,10 +4,10 @@ import java.util.List;
 
 public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 
-    String tip;
-    Empleo empleo;
-    Unidad unidad;
-    List<EquipoPersonal> listaEquiposPersona;
+	private String tip;
+	private Empleo empleo;
+	private Unidad unidad;
+	private List<EquipoPersonal> listaEquiposPersona;
     
     public static enum Empleo {
     	TenienteGeneral,

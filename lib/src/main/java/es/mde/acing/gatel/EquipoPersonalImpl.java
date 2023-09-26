@@ -3,7 +3,7 @@ package es.mde.acing.gatel;
 
 public class EquipoPersonalImpl extends EquipoImpl implements EquipoPersonal  {
 
-    MiembroGC titular;
+	private MiembroGC titular;
     
     @Override
 	public MiembroGC getTitular() {

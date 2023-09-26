@@ -5,13 +5,13 @@ import java.time.LocalDate;
 
 public class IncidenciaImpl implements Incidencia{
 
-	String codigo;
-	LocalDate fechaAlta;
-	LocalDate fechaResolucion;
-	String estado;
-	String descripcion;
-	Equipo equipo;
-	Persona agenteResulutor;
+	private String codigo;
+	private LocalDate fechaAlta;
+	private LocalDate fechaResolucion;
+	private String estado;
+	private String descripcion;
+	private Equipo equipo;
+	private Persona agenteResulutor;
 
 	public static enum TipoIncidencia {
 			Averia,
