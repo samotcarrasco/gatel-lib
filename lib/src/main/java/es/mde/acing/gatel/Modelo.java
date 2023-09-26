@@ -19,6 +19,6 @@ public interface Modelo {
 	
 	TipoModelo getTipoModelo();
 	
-//	List<Equipo> getEquipos();
+	List<Equipo> getEquipos();
 
 }

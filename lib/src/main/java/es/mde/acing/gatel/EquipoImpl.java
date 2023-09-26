@@ -9,7 +9,7 @@ public class EquipoImpl implements Equipo{
 	LocalDate fechaAdquisicion;
 	LocalDate fechaAsignacion;
 	Modelo modelo;
-	List<Incidencia> incidencias;
+	//List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
 			EquipoDeUnidad,
@@ -52,14 +52,14 @@ public class EquipoImpl implements Equipo{
 		this.modelo = modelo;
 	}
 	
-	@Override
-	public List<Incidencia> getIncidencias() {
-		return incidencias;
-	}
-	
-	public void setIncidencias(List<Incidencia> incidencias) {
-		this.incidencias = incidencias;
-	}
+//	@Override
+//	public List<Incidencia> getIncidencias() {
+//		return incidencias;
+//	}
+//	
+//	public void setIncidencias(List<Incidencia> incidencias) {
+//		this.incidencias = incidencias;
+//	}
 	
 	@Override
 	public TipoEquipo getTipoEquipo() {
@@ -70,7 +70,7 @@ public class EquipoImpl implements Equipo{
 	@Override
 	public String toString() {
 		return "EquipoImpl [numeroSerie=" + numeroSerie + ", fechaAdquisicion=" + fechaAdquisicion
-				+ ", fechaAsignacion=" + fechaAsignacion + ", modelo=" + modelo + ", incidencias=" + incidencias + "]";
+				+ ", fechaAsignacion=" + fechaAsignacion + ", modelo=" + modelo ; //+ ", incidencias=" + incidencias + "]";
 	}
 	
 }
