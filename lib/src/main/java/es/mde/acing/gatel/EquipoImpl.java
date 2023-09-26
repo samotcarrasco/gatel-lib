@@ -3,14 +3,16 @@ package es.mde.acing.gatel;
 import java.time.LocalDate;
 import java.util.List;
 
+import es.mde.acing.gatel.EquipoImpl.TipoEquipo;
+
 public class EquipoImpl implements Equipo{
 
 	private String numeroSerie;
 	private LocalDate fechaAdquisicion;
 	private LocalDate fechaAsignacion;
-	Modelo modelo;
-//	List<Unidad> unidades;
-//	List<MiembroGC> miembrosGC;
+	private Modelo modelo;
+	private Unidad unidad;
+	//MiembroGC miembroGC;
 	//List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
@@ -63,24 +65,17 @@ public class EquipoImpl implements Equipo{
 //		this.incidencias = incidencias;
 //	}
 	
-//	@Override
-//	public List<Unidad> getUnidades() {
-//		return unidades;
-//	}
-//	
-//	public void setUnidades(List<Unidad> unidades) {
-//		this.unidades = unidades;
-//	}
-//
-//	@Override
-//	public List<MiembroGC> getMiembrosGC() {
-//			return miembrosGC;
-//	}
-//	
-//	public void setMiembrosGC(List<MiembroGC> miembrosGC) {
-//		this.miembrosGC = miembrosGC;
-//	}
-	
+
+    @Override
+	public Unidad getUnidad() {
+		return unidad;
+	}
+
+	public void setUnidad(Unidad unidad) {
+		this.unidad = unidad;
+	}
+    
+
 	@Override
 	public TipoEquipo getTipoEquipo() {
 		//En las clases hijas(herecia) controlamos el valor del tipoModelo
