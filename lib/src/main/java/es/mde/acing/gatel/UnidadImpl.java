@@ -8,8 +8,8 @@ public class UnidadImpl implements Unidad{
 	private String codigoUnidad;
 	private String correoOficial;
 	private String telefono;
-	private List<EquipoDeUnidad> listaEquiposUnidad;
-	private List<MiembroGC> listaMiembrosGC;
+	private List<EquipoDeUnidad> equiposDeUnidad;
+	//private List<MiembroGC> listaMiembrosGC;
 	
     @Override
     public String getNombre() {
@@ -48,28 +48,27 @@ public class UnidadImpl implements Unidad{
 	}
 	
     @Override
-	public List<EquipoDeUnidad> getListaEquiposUnidad() {
-		return listaEquiposUnidad;
+	public List<EquipoDeUnidad> getEquiposDeUnidad() {
+		return equiposDeUnidad;
 	}
     
-	public void setListaEquiposUnidad(List<EquipoDeUnidad> listaEquiposUnidad) {
-		this.listaEquiposUnidad = listaEquiposUnidad;
+	public void setListaEquiposUnidad(List<EquipoDeUnidad> equiposDeUnidad) {
+		this.equiposDeUnidad = equiposDeUnidad;
 	}
 
-    @Override
-    public List<MiembroGC> getListaMiembrosGC() {
-		return listaMiembrosGC;
-	}
-    
-	public void setListaMiembrosGC(List<MiembroGC> listaMiembrosGC) {
-		this.listaMiembrosGC = listaMiembrosGC;
-	}
+//    @Override
+//    public List<MiembroGC> getMiembrosGC() {
+//		return listaMiembrosGC;
+//	}
+//    
+//	public void setMiembrosGC(List<MiembroGC> listaMiembrosGC) {
+//		this.listaMiembrosGC = listaMiembrosGC;
+//	}
 
 	@Override
 	public String toString() {
 		return "UnidadImpl [nombre=" + nombre + ", codigoUnidad=" + codigoUnidad + ", correoOficial=" + correoOficial
-				+ ", telefono=" + telefono + ", listaEquiposUnidad=" + listaEquiposUnidad + ", listaMiembrosGC="
-				+ listaMiembrosGC + "]";
+				+ ", telefono=" + telefono  ;
 	}
 
 }

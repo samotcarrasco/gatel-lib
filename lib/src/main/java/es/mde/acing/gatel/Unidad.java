@@ -12,8 +12,8 @@ public interface Unidad {
     
     String getTelefono();
     
-    List<EquipoDeUnidad> getListaEquiposUnidad();
+    List<EquipoDeUnidad> getEquiposDeUnidad();
     
-    List<MiembroGC> getListaMiembrosGC();
+   // List<MiembroGC> getListaMiembrosGC();
 
 }
