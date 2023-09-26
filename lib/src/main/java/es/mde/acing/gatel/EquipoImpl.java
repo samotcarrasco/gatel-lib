@@ -12,7 +12,7 @@ public class EquipoImpl implements Equipo{
 	private LocalDate fechaAsignacion;
 	private Modelo modelo;
 	private Unidad unidad;
-	//MiembroGC miembroGC;
+	private Persona persona;
 	//List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
@@ -73,6 +73,15 @@ public class EquipoImpl implements Equipo{
 
 	public void setUnidad(Unidad unidad) {
 		this.unidad = unidad;
+	}
+    
+    @Override
+	public Persona getPersona() {
+		return persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
     
 

@@ -17,7 +17,7 @@ public interface Equipo {
 	
 	Unidad getUnidad();
 	
-	//MiembroGC getMiembroGC();
+	Persona getPersona();
 	
 	//List<Incidencia> getIncidencias();
 	
