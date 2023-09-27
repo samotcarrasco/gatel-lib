@@ -13,6 +13,8 @@ public class EquipoImpl implements Equipo{
 	private Modelo modelo;
 	private Unidad unidad;
 	private Persona persona;
+	//incluimos este atributo para poder hacer tipos genéricos (sin asignar ni a persona ni a unidad)
+	private TipoEquipo tipoEquipo;
 	//List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
@@ -89,6 +91,12 @@ public class EquipoImpl implements Equipo{
 	public TipoEquipo getTipoEquipo() {
 		//En las clases hijas(herecia) controlamos el valor del tipoModelo
 		return null;
+	}
+	
+	public void setTipoGenerico() {
+		this.persona = null;
+		this.unidad = null;
+		this.tipoEquipo =  null;
 	}
 	
 	@Override
