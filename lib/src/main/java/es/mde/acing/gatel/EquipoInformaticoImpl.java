@@ -49,8 +49,8 @@ public class EquipoInformaticoImpl extends ModeloImpl implements EquipoInformati
 		return tipoEquipoInformatico;
 	}
 	
-	public void setTipoEquipoInformatico(String tipoEquipoInf) {
-		this.tipoEquipoInformatico = tipoEquipoInf;
+	public void setTipoEquipoInformatico(String tipoEquipoInformatico) {
+		this.tipoEquipoInformatico = tipoEquipoInformatico;
 	}
 	
 	
