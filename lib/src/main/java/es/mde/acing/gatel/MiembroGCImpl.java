@@ -6,8 +6,6 @@ public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 
 	private String tip;
 	private Empleo empleo;
-	private Unidad unidad;
-	private List<EquipoPersonal> listaEquiposPersona;
     
     public static enum Empleo {
     	TenienteGeneral,
@@ -48,34 +46,14 @@ public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 	}
 	
 	@Override
-    public Unidad getUnidad() {
-		return unidad;
-	}
-	
-	public void setUnidad(Unidad unidad) {
-		this.unidad = unidad;
-	}
-	
-	@Override
-    public List<EquipoPersonal> getListaEquiposPersona() {
-		return listaEquiposPersona;
-	}
-	public void setListaEquiposPersona(List<EquipoPersonal> listaEquiposPersona) {
-		this.listaEquiposPersona = listaEquiposPersona;
-	}
-	
-
-	@Override
 	public TipoPersona getTipoPersona() {
 	    return TipoPersona.MiembroGC;
 	}
 
 	@Override
 	public String toString() {
-		return "MiembroGCImpl [tip=" + tip + ", empleo=" + empleo + ", unidad=" + unidad + ", listaEquiposPersona="
-				+ listaEquiposPersona + " Persona: " + super.toString() + "]";
+		return "MiembroGCImpl [tip=" + tip + ", empleo=" + empleo + super.toString() + "]";
 	}
-	  
-    
-    
+
+		
 }

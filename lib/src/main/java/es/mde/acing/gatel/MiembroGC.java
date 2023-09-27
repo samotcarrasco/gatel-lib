@@ -11,5 +11,6 @@ public interface MiembroGC {
     
     Unidad getUnidad();
     
-    List<EquipoPersonal> getListaEquiposPersona();
+	List<EquipoPersonal> getEquiposPersonales();
+  
 }

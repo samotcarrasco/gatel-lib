@@ -9,17 +9,13 @@ public class PersonaImpl implements Persona{
 	private String apellidos;
 	private String telefono;
 	private String email;
-	private Perfil perfil;
+	private String perfil;
 	private String nombreUsuario;
 	private String password;
-	private List<Incidencia> incidencias;
-    
-	public static enum Perfil {
-		Estandar,
-	    AdministradorUnidad,
-	    AdministradorCentral,
-	    Resolutor
-	}	
+	private List<EquipoPersonal> equiposPersonales;
+	private Unidad unidad;
+	
+	//private List<Incidencia> incidencias;
 	
 	public static enum TipoPersona {
 		MiembroGC,
@@ -63,11 +59,11 @@ public class PersonaImpl implements Persona{
 	}
 	
 	@Override
-	public Perfil getPerfil() {
+	public String getPerfil() {
 		return perfil;
 	}
 	
-	public void setPerfil(Perfil perfil) {
+	public void setPerfil(String perfil) {
 		this.perfil = perfil;
 	}
 	
@@ -89,15 +85,32 @@ public class PersonaImpl implements Persona{
 		this.password = password;
 	}
 	
+//	@Override
+//	public List<Incidencia> getIncidencias() {
+//		return incidencias;
+//	}
+//	
+//	public void setIncidencias(List<Incidencia> incidencias) {
+//		this.incidencias = incidencias;
+//	}
+//  
 	@Override
-	public List<Incidencia> getIncidencias() {
-		return incidencias;
+	public List<EquipoPersonal> getEquiposPersonales() {
+		return equiposPersonales;
+	}
+    
+	public void setEquiposPersonales(List<EquipoPersonal> equiposPersonales) {
+		this.equiposPersonales = equiposPersonales;
 	}
 	
-	public void setIncidencias(List<Incidencia> incidencias) {
-		this.incidencias = incidencias;
+	public Unidad getUnidad() {
+		return unidad;
 	}
-     
+
+	public void setUnidad(Unidad unidad) {
+		this.unidad = unidad;
+	}
+
 	@Override
 	public TipoPersona getTipoPersona() {
 		//En las clases hijas(herecia) controlamos el valor del tipoModelo
@@ -107,8 +120,8 @@ public class PersonaImpl implements Persona{
 	@Override
 	public String toString() {
 		return "PersonaImpl [nombre=" + nombre + ", apellidos=" + apellidos + ", telefono=" + telefono + ", email="
-				+ email + ", perfil=" + perfil + ", nombreUsuario=" + nombreUsuario + ", password=" + password
-				+ ", incidencias=" + incidencias + "]";
+				+ email + ", perfil=" + perfil + ", nombreUsuario=" + nombreUsuario + ", password=" + password ;
+			//	+ ", incidencias=" + incidencias + "]";
 	}
     
 }
