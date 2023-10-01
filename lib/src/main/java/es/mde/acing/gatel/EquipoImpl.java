@@ -13,7 +13,7 @@ public class EquipoImpl implements Equipo{
 	private Modelo modelo;
 	private Unidad unidad;
 	private Persona persona;
-	//List<Incidencia> incidencias;
+	List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
 			EquipoDeUnidad,
@@ -56,14 +56,14 @@ public class EquipoImpl implements Equipo{
 		this.modelo = modelo;
 	}
 	
-//	@Override
-//	public List<Incidencia> getIncidencias() {
-//		return incidencias;
-//	}
-//	
-//	public void setIncidencias(List<Incidencia> incidencias) {
-//		this.incidencias = incidencias;
-//	}
+	@Override
+	public List<Incidencia> getIncidencias() {
+		return incidencias;
+	}
+	
+	public void setIncidencias(List<Incidencia> incidencias) {
+		this.incidencias = incidencias;
+	}
 	
 
     @Override

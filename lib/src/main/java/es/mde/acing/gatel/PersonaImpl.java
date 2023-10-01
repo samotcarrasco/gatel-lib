@@ -13,9 +13,8 @@ public class PersonaImpl implements Persona{
 	private String nombreUsuario;
 	private String password;
 	private List<EquipoPersonal> equiposPersonales;
-	private Unidad unidad;
-	
-	//private List<Incidencia> incidencias;
+	private Unidad unidad;	
+	private List<Incidencia> incidencias;
 	
 	public static enum TipoPersona {
 		MiembroGC,
@@ -85,15 +84,15 @@ public class PersonaImpl implements Persona{
 		this.password = password;
 	}
 	
-//	@Override
-//	public List<Incidencia> getIncidencias() {
-//		return incidencias;
-//	}
-//	
-//	public void setIncidencias(List<Incidencia> incidencias) {
-//		this.incidencias = incidencias;
-//	}
-//  
+	@Override
+	public List<Incidencia> getIncidencias() {
+		return incidencias;
+	}
+	
+	public void setIncidencias(List<Incidencia> incidencias) {
+		this.incidencias = incidencias;
+	}
+  
 	@Override
 	public List<EquipoPersonal> getEquiposPersonales() {
 		return equiposPersonales;

@@ -19,7 +19,7 @@ public interface Equipo {
 	
 	Persona getPersona();
 	
-	//List<Incidencia> getIncidencias();
+	List<Incidencia> getIncidencias();
 	
 	TipoEquipo getTipoEquipo();
 	

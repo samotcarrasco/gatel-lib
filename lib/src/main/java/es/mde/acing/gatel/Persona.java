@@ -19,7 +19,7 @@ public interface Persona {
     
     String getPassword();
     
-  //  List<Incidencia> getIncidencias();
+    List<Incidencia> getIncidencias();
      
     TipoPersona getTipoPersona();
     
