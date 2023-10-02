@@ -14,6 +14,8 @@ public interface Unidad {
     
     List<EquipoDeUnidad> getEquiposDeUnidad();
     
+    List<Persona> getMiembrosGC();
+    
    // List<MiembroGC> getListaMiembrosGC();
 
 }
