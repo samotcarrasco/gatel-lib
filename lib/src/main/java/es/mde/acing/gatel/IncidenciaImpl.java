@@ -54,11 +54,11 @@ public class IncidenciaImpl implements Incidencia{
 	}
 
 	@Override
-	public String getEstado() {
+	public EstadoIncidencia getEstado() {
 		return estado;
 	}
 
-	public void setEstado(String estado) {
+	public void setEstado(EstadoIncidencia estado) {
 		this.estado = estado;
 	}
 
