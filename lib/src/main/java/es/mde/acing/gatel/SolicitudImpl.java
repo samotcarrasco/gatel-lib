@@ -2,15 +2,15 @@ package es.mde.acing.gatel;
 
 public class SolicitudImpl extends IncidenciaImpl implements Solicitud{
 
-	private String aceptacion;
+	private Boolean aceptado;
 
 	@Override
-	public String isAceptado() {
-		return aceptacion;
+	public Boolean isAceptado() {
+		return aceptado;
 	}
 
-	public void setAcpetado(String aceptacion) {
-		this.aceptacion = aceptacion;
+	public void setAcpetado(Boolean acpetado) {
+		this.aceptado = acpetado;
 	}
 
 	@Override
@@ -20,7 +20,7 @@ public class SolicitudImpl extends IncidenciaImpl implements Solicitud{
 
 	@Override
 	public String toString() {
-		return "SolicitudImpl [acpetacion=" + aceptacion + " Incidencia: " + super.toString() + "]";
+		return "SolicitudImpl [acpetacion=" + aceptado + " Incidencia: " + super.toString() + "]";
 	}
 
 	
