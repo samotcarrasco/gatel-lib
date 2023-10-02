@@ -15,7 +15,7 @@ public class WebCamImpl extends ModeloImpl implements WebCam {
 
 	@Override
 	    public TipoModelo getTipoModelo() {
-	        return TipoModelo.WebCam;
+	        return TipoModelo.WEBCAM;
 	    }
 
 	@Override

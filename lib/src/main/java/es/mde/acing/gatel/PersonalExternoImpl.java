@@ -1,9 +1,5 @@
 package es.mde.acing.gatel;
 
-import java.util.List;
-
-import es.mde.acing.gatel.PersonaImpl.TipoPersona;
-
 public class PersonalExternoImpl extends PersonaImpl implements PersonalExterno {
 
 	private String dni;
@@ -29,7 +25,7 @@ public class PersonalExternoImpl extends PersonaImpl implements PersonalExterno 
 	
 	@Override
 	public TipoPersona getTipoPersona() {
-	    return TipoPersona.PersonalExterno;
+	    return TipoPersona.PERSONAL_EXTERNO;
 	}
 
 	@Override

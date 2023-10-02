@@ -17,8 +17,8 @@ public class PersonaImpl implements Persona{
 	private List<Incidencia> incidencias;
 	
 	public static enum TipoPersona {
-		MiembroGC,
-		PersonalExterno
+		MIEMBRO_GC,
+		PERSONAL_EXTERNO
 	}
 	
     @Override

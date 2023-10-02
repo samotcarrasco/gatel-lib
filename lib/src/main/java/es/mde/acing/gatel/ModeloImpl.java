@@ -12,9 +12,9 @@ public class ModeloImpl implements Modelo {
     private List<Equipo> equipos;
 
     public static enum TipoModelo {
-		EquipoInformatico,
-	    WebCam,
-	    Auriculares
+		EQUIPO_INFORMATICO,
+	    WEBCAM,
+	    AURICULARES
 	}
     
     @Override

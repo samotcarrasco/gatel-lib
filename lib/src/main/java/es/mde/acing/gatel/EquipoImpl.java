@@ -3,8 +3,6 @@ package es.mde.acing.gatel;
 import java.time.LocalDate;
 import java.util.List;
 
-import es.mde.acing.gatel.EquipoImpl.TipoEquipo;
-
 public class EquipoImpl implements Equipo{
 
 	private String numeroSerie;
@@ -16,8 +14,8 @@ public class EquipoImpl implements Equipo{
 	List<Incidencia> incidencias;
 	
 	public static enum TipoEquipo {
-			EquipoDeUnidad,
-		    EquipoPersonal
+			EQUIPO_UNIDAD,
+		    EQUIPO_PERSONAL
 		}
 	
 	@Override

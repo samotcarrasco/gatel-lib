@@ -1,7 +1,5 @@
 package es.mde.acing.gatel;
 
-import java.util.List;
-
 public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 
 	private String tip;
@@ -47,7 +45,7 @@ public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 	
 	@Override
 	public TipoPersona getTipoPersona() {
-	    return TipoPersona.MiembroGC;
+	    return TipoPersona.MIEMBRO_GC;
 	}
 
 	@Override
