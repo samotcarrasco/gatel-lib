@@ -8,7 +8,7 @@ public class IncidenciaImpl implements Incidencia{
 	private String codigo;
 	private LocalDate fechaAlta;
 	private LocalDate fechaResolucion;
-	private String estado;
+	private EstadoIncidencia estado;
 	private String descripcion;
 	private Equipo equipo;
 	private Persona agenteResolutor;
@@ -19,6 +19,12 @@ public class IncidenciaImpl implements Incidencia{
 		    CONFIGURACION,
 		    SOLICITUD
 	}
+	public static enum EstadoIncidencia {
+			NUEVA,
+		    ASIGNADA,
+		    RESUELTA,
+		    CERRADA
+		}
 	
 	@Override
 	public String getCodigo() {

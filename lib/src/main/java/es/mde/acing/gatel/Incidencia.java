@@ -1,6 +1,8 @@
 package es.mde.acing.gatel;
 
 import java.time.LocalDate;
+
+import es.mde.acing.gatel.IncidenciaImpl.EstadoIncidencia;
 import es.mde.acing.gatel.IncidenciaImpl.TipoIncidencia;
 
 public interface Incidencia {
@@ -11,7 +13,7 @@ public interface Incidencia {
 
 	LocalDate getFechaResolucion();
 	
-	String getEstado();
+	EstadoIncidencia getEstado();
 	
 	String getDescripcion();
 
