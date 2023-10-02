@@ -15,7 +15,7 @@ public class SolicitudImpl extends IncidenciaImpl implements Solicitud{
 
 	@Override
 	public TipoIncidencia getTipoIncidencia() {
-	    return TipoIncidencia.Solicitud;
+	    return TipoIncidencia.SOLICITUD;
 	}
 
 	@Override

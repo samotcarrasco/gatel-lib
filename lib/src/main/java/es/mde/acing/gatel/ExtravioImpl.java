@@ -45,7 +45,7 @@ public class ExtravioImpl extends IncidenciaImpl implements Extravio{
 
 	@Override
 	public TipoIncidencia getTipoIncidencia() {
-	    return TipoIncidencia.Extravio;
+	    return TipoIncidencia.EXTRAVIO;
 	}
 
 	@Override

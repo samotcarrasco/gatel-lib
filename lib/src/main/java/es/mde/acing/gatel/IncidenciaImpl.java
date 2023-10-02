@@ -14,10 +14,10 @@ public class IncidenciaImpl implements Incidencia{
 	private Persona agenteResulutor;
 
 	public static enum TipoIncidencia {
-			Averia,
-		    Extravio,
-		    Configuracion,
-		    Solicitud
+			AVERIA,
+		    EXTRAVIO,
+		    CONFIGURACION,
+		    SOLICITUD
 	}
 	
 	@Override

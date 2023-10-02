@@ -16,7 +16,7 @@ public class ConfiguracionImpl extends IncidenciaImpl implements Configuracion{
 
 	@Override
 	public TipoIncidencia getTipoIncidencia() {
-	    return TipoIncidencia.Configuracion;
+	    return TipoIncidencia.CONFIGURACION;
 	}
 
 	@Override

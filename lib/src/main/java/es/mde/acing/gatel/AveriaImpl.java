@@ -25,7 +25,7 @@ public class AveriaImpl extends IncidenciaImpl implements Averia{
 
 	@Override
 	public TipoIncidencia getTipoIncidencia() {
-	    return TipoIncidencia.Averia;
+	    return TipoIncidencia.AVERIA;
 	}
 
 	@Override
