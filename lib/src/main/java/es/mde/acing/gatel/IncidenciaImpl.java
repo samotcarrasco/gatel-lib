@@ -11,7 +11,7 @@ public class IncidenciaImpl implements Incidencia{
 	private String estado;
 	private String descripcion;
 	private Equipo equipo;
-	private Persona agenteResulutor;
+	private Persona agenteResolutor;
 
 	public static enum TipoIncidencia {
 			AVERIA,
@@ -75,12 +75,12 @@ public class IncidenciaImpl implements Incidencia{
 	}
 
 	@Override
-	public Persona getAgenteResulutor() {
-		return agenteResulutor;
+	public Persona getAgenteResolutor() {
+		return agenteResolutor;
 	}
 
-	public void setAgenteResulutor(Persona agenteResulutor) {
-		this.agenteResulutor = agenteResulutor;
+	public void setAgenteResolutor(Persona agenteResolutor) {
+		this.agenteResolutor = agenteResolutor;
 	}
 
 	@Override
@@ -92,8 +92,8 @@ public class IncidenciaImpl implements Incidencia{
 	@Override
 	public String toString() {
 		return "IncidenciaImpl [codigo=" + codigo + ", fechaAlta=" + fechaAlta + ", fechaResolucion=" + fechaResolucion
-				+ ", estado=" + estado + ", descripcion=" + descripcion + ", equipo=" + equipo + ", agenteResulutor="
-				+ agenteResulutor + "]";
+				+ ", estado=" + estado + ", descripcion=" + descripcion + ", equipo=" + equipo + ", agenteResolutor="
+				+ agenteResolutor + "]";
 	}
 	
 }

@@ -17,7 +17,7 @@ public interface Incidencia {
 
 	Equipo getEquipo();
 
-	Persona getAgenteResulutor();
+	Persona getAgenteResolutor();
 	
 	TipoIncidencia getTipoIncidencia();
 }
