@@ -3,27 +3,8 @@ package es.mde.acing.gatel;
 public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 
 	private String tip;
-	private Empleo empleo;
+	private String empleo;
     
-    public static enum Empleo {
-    	TenienteGeneral,
-    	GeneralDeDivision,
-    	GeneralDeBrigada,
-        Coronel,
-    	TenienteCoronel,
-    	Comandante,
-    	Capitan,
-    	Teniente,
-    	SuboficialMayor,
-    	Subteniente,
-    	Brigada,
-    	SargentoPrimero,
-    	Sargento,
-    	CaboMayor,
-    	CaboPrimero,
-    	Cabo,
-    	GuardiaCivil
-	}	
 	
     @Override
     public String getTip() {
@@ -35,11 +16,11 @@ public class MiembroGCImpl extends PersonaImpl implements MiembroGC {
 	}
 	
 	@Override
-    public Empleo getEmpleo() {
+    public String getEmpleo() {
 		return empleo;
 	}
 	
-	public void setEmpleo(Empleo empleo) {
+	public void setEmpleo(String empleo) {
 		this.empleo = empleo;
 	}
 	

@@ -8,8 +8,6 @@ import es.mde.acing.gatel.ModeloImpl.TipoModelo;
 public interface Modelo {
 
 	String getMarca();
-
-	String getCategoria();
 	
 	String getNombreModelo();
 	

@@ -4,7 +4,6 @@ import java.util.List;
 
 public class ModeloImpl implements Modelo {
     private String marca;
-    private String categoria;
     private String nombreModelo;
     private String detalles;
     private String imagen;
@@ -24,15 +23,6 @@ public class ModeloImpl implements Modelo {
 
 	public void setMarca(String marca) {
 		this.marca = marca;
-	}
-
-    @Override
-    public String getCategoria() {
-        return categoria;
-    }
-
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
 	}
 
     @Override
@@ -79,7 +69,7 @@ public class ModeloImpl implements Modelo {
 	
 	@Override
 	public String toString() {
-		return "ModeloImpl [marca=" + marca + ", categoria=" + categoria + ", nombreModelo=" + nombreModelo
+		return "ModeloImpl [marca=" + marca + ", nombreModelo=" + nombreModelo
 				+ ", detalles=" + detalles ;//+ ", equipos=" + equipos + "]";
 	}
 

@@ -7,7 +7,7 @@ public interface MiembroGC {
 
     String getTip();
     
-    Empleo getEmpleo();
+    String getEmpleo();
     
     Unidad getUnidad();
     
