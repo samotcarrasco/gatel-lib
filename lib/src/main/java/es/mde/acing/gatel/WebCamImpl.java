@@ -1,7 +1,7 @@
 package es.mde.acing.gatel;
 
 public class WebCamImpl extends ModeloImpl implements WebCam {
-    private Integer resolucion;
+    private String resolucion;
 
    
 	@Override
