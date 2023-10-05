@@ -5,11 +5,11 @@ public class WebCamImpl extends ModeloImpl implements WebCam {
 
    
 	@Override
-	public Integer getResolucion() {
+	public String getResolucion() {
 		return resolucion;
 	}
 
-	public void setResolucion(Integer resolucion) {
+	public void setResolucion(String resolucion) {
 		this.resolucion = resolucion;
 	}
 
