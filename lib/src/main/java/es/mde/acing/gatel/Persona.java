@@ -1,6 +1,8 @@
 package es.mde.acing.gatel;
 
 import java.util.List;
+
+import es.mde.acing.gatel.PersonaImpl.Perfil;
 import es.mde.acing.gatel.PersonaImpl.TipoPersona;
 
 public interface Persona {
@@ -13,7 +15,7 @@ public interface Persona {
     
     String getEmail();
     
-    String getPerfil();
+    Perfil getPerfil();
     
     String getNombreUsuario();
     

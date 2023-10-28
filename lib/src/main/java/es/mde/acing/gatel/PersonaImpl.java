@@ -9,7 +9,7 @@ public class PersonaImpl implements Persona{
 	private String apellidos;
 	private String telefono;
 	private String email;
-	private String perfil;
+	private Perfil perfil;
 	private String nombreUsuario;
 	private String password;
 	private List<EquipoPersonal> equiposPersonales;
@@ -19,6 +19,13 @@ public class PersonaImpl implements Persona{
 	public static enum TipoPersona {
 		MIEMBRO_GC,
 		PERSONAL_EXTERNO
+	}
+	
+	public static enum Perfil {
+		ADMIN_CENTRAL,
+		ADMIN_UNIDAD,
+		USUARIO,
+		RESOLUTOR
 	}
 	
     @Override
@@ -58,11 +65,11 @@ public class PersonaImpl implements Persona{
 	}
 	
 	@Override
-	public String getPerfil() {
+	public Perfil getPerfil() {
 		return perfil;
 	}
 	
-	public void setPerfil(String perfil) {
+	public void setPerfil(Perfil perfil) {
 		this.perfil = perfil;
 	}
 	
