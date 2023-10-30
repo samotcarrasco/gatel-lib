@@ -22,4 +22,11 @@ public interface Incidencia {
 	Persona getAgenteResolutor();
 	
 	TipoIncidencia getTipoIncidencia();
+	
+	LocalDate getFechaCierre();
+	
+	LocalDate getFechaAsignacion();
+	
+	String getDetalles();
+	
 }

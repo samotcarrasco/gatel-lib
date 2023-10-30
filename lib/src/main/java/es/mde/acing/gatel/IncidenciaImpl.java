@@ -12,6 +12,9 @@ public class IncidenciaImpl implements Incidencia{
 	private String descripcion;
 	private Equipo equipo;
 	private Persona agenteResolutor;
+	private String detalles;
+	private LocalDate fechaCierre;
+	private LocalDate fechaAsignacion;
 
 	public static enum TipoIncidencia {
 			AVERIA,
@@ -96,10 +99,36 @@ public class IncidenciaImpl implements Incidencia{
 	}
 
 	@Override
+	public String getDetalles() {
+		return detalles;
+	}
+
+	public void setDetalles(String detalles) {
+		this.detalles = detalles;
+	}
+
+	@Override
+	public LocalDate getFechaCierre() {
+		return fechaCierre;
+	}
+
+	public void setFechaCierre(LocalDate fechaCierre) {
+		this.fechaCierre = fechaCierre;
+	}
+
+	@Override
+	public LocalDate getFechaAsignacion() {
+		return fechaAsignacion;
+	}
+
+	public void setFechaAsignacion(LocalDate fechaAsignacion) {
+		this.fechaAsignacion = fechaAsignacion;
+	}
+
+	@Override
 	public String toString() {
 		return "IncidenciaImpl [codigo=" + codigo + ", fechaAlta=" + fechaAlta + ", fechaResolucion=" + fechaResolucion
 				+ ", estado=" + estado + ", descripcion=" + descripcion + ", equipo=" + equipo + ", agenteResolutor="
 				+ agenteResolutor + "]";
 	}
-	
 }
